@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.app {
+    border:5px solid blue;
+    background:gray;
+    position: relative;
+}
+.app[size="2"] {
+    width: 210px;
+    height: 210px;
+}
+.app[size="3"] {
+    width: 310px;
+    height: 310px;
+}
+.app[size="4"] {
+    width: 410px;
+    height: 410px;
+}
+.app[size="5"] {
+    width: 510px;
+    height: 510px;
+}
+.app[size="6"] {
+    width: 610px;
+    height: 610px;
+}
+.app[size="7"] {
+    width: 710px;
+    height: 710px;
+}
+.app[image] .square {
+    border:0;
+}
+.square {
+    border:2px solid red;
+    background:#fff;
+    color:red;
+    width:100px;
+    height:100px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 100px;
+    user-select: none;
+    font-family: Arial;
+    font-weight: bold;
+    transition: left .1s linear, top .1s linear, opacity .3s linear;    
+}
+.empty-square {
+    width: 100px;
+    height: 100px;
+    background: gray;
+    user-select: none;
+    visibility: hidden;
+}
+.win-message {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+}
+.win-message__title {
+    text-align: center;
+    font-weight: bold;
+    color:red;
+    font-size: 35px;
+    padding:20px 0;
+} 
+
+.win-message__body {
+    text-align: center;
+    padding:10px;
+    margin:10px;
+    border: 1px dotted gray;
+}
+.win-message__more {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.win-message button {
+    font-size: 20px;
+    padding:5px 10px;
+}
